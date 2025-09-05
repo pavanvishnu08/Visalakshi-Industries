@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visalakshi Industries India Pvt Ltd - Premium Fabrication Services</title>
+    <meta name="description" content="Leading fabrication company delivering premium quality metalwork, custom steel structures, and industrial solutions with precision and excellence.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-dark': '#001B44',
+                        'blue-bright': '#0072CE',
+                        'orange-accent': '#F7931E',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
+        <!-- Top Contact Bar -->
+        <div class="bg-navy-dark text-white py-2 px-4 hidden md:block">
+            <div class="container mx-auto flex justify-between items-center text-sm">
+                <div class="flex space-x-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>+91-8121035599</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>info@visalakshiindustries.com</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Main Navigation -->
+        <nav class="bg-white shadow-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <img src="logo.png" alt="Visalakshi Industries India Pvt Ltd Logo" class="h-12 w-auto mr-3">
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <ul class="hidden lg:flex space-x-8">
+                        <li><a href="#home" class="nav-link text-navy-dark hover:text-blue-bright font-medium transition-colors">Home</a></li>
+                        <li><a href="#about" class="nav-link text-navy-dark hover:text-blue-bright font-medium transition-colors">About Us</a></li>
+                        <li><a href="#services" class="nav-link text-navy-dark hover:text-blue-bright font-medium transition-colors">Services</a></li>
+                        <li><a href="#gallery" class="nav-link text-navy-dark hover:text-blue-bright font-medium transition-colors">Gallery</a></li>
+                        <li><a href="#clients" class="nav-link text-navy-dark hover:text-blue-bright font-medium transition-colors">Our Clients</a></li>
+                        <li><a href="#contact" class="nav-link text-navy-dark hover:text-blue-bright font-medium transition-colors">Contact</a></li>
+                    </ul>
+                    
+                    <!-- CTA Button -->
+                    <button class="hidden lg:block bg-orange-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors shadow-md">
+                        Get Quote Now
+                    </button>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-toggle" class="lg:hidden">
+                        <i class="fas fa-bars text-2xl text-navy-dark"></i>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="lg:hidden hidden pb-4">
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="block py-2 text-navy-dark hover:text-blue-bright font-medium transition-colors">Home</a></li>
+                        <li><a href="#about" class="block py-2 text-navy-dark hover:text-blue-bright font-medium transition-colors">About Us</a></li>
+                        <li><a href="#services" class="block py-2 text-navy-dark hover:text-blue-bright font-medium transition-colors">Services</a></li>
+                        <li><a href="#gallery" class="block py-2 text-navy-dark hover:text-blue-bright font-medium transition-colors">Gallery</a></li>
+                        <li><a href="#clients" class="block py-2 text-navy-dark hover:text-blue-bright font-medium transition-colors">Our Clients</a></li>
+                        <li><a href="#contact" class="block py-2 text-navy-dark hover:text-blue-bright font-medium transition-colors">Contact</a></li>
+                    </ul>
+                    <button class="w-full mt-4 bg-orange-accent text-white px-6 py-3 rounded-lg font-semibold">
+                        Get Quote Now
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 bg-gradient-to-br from-navy-dark via-blue-bright to-navy-dark min-h-screen flex items-center">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6">Premium Fabrication Services</h1>
+                    <h2 class="text-2xl lg:text-3xl font-semibold mb-4 text-orange-accent">Visalakshi Industries India Private Limited</h2>
+                    <p class="text-lg lg:text-xl mb-8 leading-relaxed">Leading fabrication company delivering premium quality metalwork, custom steel structures, and industrial solutions with precision and excellence.</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <a href="#contact" class="bg-orange-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-600 transition-colors shadow-lg">
+                            Get Free Quote
+                        </a>
+                        <a href="attached_assets/PROFILE - Copy_1755784191244.docx" download="Visalakshi-Industries-Brochure.docx" class="bg-blue-bright hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-download mr-2"></i>Download Brochure
+                        </a>
+                        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-navy-dark transition-colors">
+                            View Our Work
+                        </a>
+                    </div>
+                    
+                    <!-- Stats Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div class="glass-card p-6 rounded-lg text-center">
+                            <div class="text-3xl font-bold text-orange-accent mb-2">15+</div>
+                            <div class="text-sm">Years Industry Experience</div>
+                        </div>
+                        <div class="glass-card p-6 rounded-lg text-center">
+                            <div class="text-3xl font-bold text-orange-accent mb-2">500+</div>
+                            <div class="text-sm">Projects Completed</div>
+                        </div>
+                        <div class="glass-card p-6 rounded-lg text-center">
+                            <div class="text-3xl font-bold text-orange-accent mb-2">100%</div>
+                            <div class="text-sm">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block">
+                    <div class="relative">
+                        <!-- Hero Image Placeholder -->
+                        <div class="w-full h-96 bg-gradient-to-br from-gray-300 to-gray-400 rounded-lg flex items-center justify-center shadow-2xl">
+                            <div class="text-center text-gray-600">
+                                <i class="fas fa-industry text-6xl mb-4"></i>
+                                <p class="text-lg font-semibold">Industrial Workshop</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-navy-dark mb-6">Welcome To Visalakshi Industries</h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">Visalakshi Industries started in 2021 as a modern growing fabrication company and has emerged as a top player in premium fabrication services across India. We specialize in delivering high-quality metalwork solutions that combine traditional craftsmanship with modern technology.</p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-navy-dark mb-4">Technology Promoters</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">Visalakshi Industries is supported by a group of expert committee for continuous research for everlasting growth in terms of technology, quality, safety & cost oriented.</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-navy-dark mb-4">What We Can Deliver</h3>
+                        <p class="text-lg text-gray-600 leading-relaxed">Visalakshi Industries with its highly experienced personnel manufacture & supply sophisticated equipment's to suit utmost safety produce constant quality product to work with zero break downs with optimized man-power & energy items for all the cement, iron ore/sponge iron projects, mining industries, coal industries, steel bridges, PEB buildings, chemical, pharmaceutical food processing industries, ports (ship yards), airports and all steel structures etc.</p>
+                        <p class="text-lg text-gray-600 leading-relaxed mt-4">We are also pioneered in sand blasting, copper slag blasting, airless painting and metalizing.</p>
+                    </div>
+                    
+                    <p class="text-lg text-gray-600 leading-relaxed">Our commitment to excellence, attention to detail, and customer-centric approach has earned us the trust of hundreds of satisfied clients. From residential gates to large-scale industrial projects, we bring precision, quality, and reliability to every project we undertake.</p>
+                </div>
+            </div>
+            
+            <!-- Strengths -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-navy-dark text-center mb-12">Our Strengths</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <i class="fas fa-gem text-2xl text-blue-bright mr-4"></i>
+                        <span class="font-semibold text-navy-dark">Premium Quality Materials</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <i class="fas fa-hammer text-2xl text-orange-accent mr-4"></i>
+                        <span class="font-semibold text-navy-dark">Expert Craftsmanship</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <i class="fas fa-shipping-fast text-2xl text-blue-bright mr-4"></i>
+                        <span class="font-semibold text-navy-dark">Timely Project Delivery</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <i class="fas fa-dollar-sign text-2xl text-orange-accent mr-4"></i>
+                        <span class="font-semibold text-navy-dark">Competitive Pricing</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <i class="fas fa-heart text-2xl text-blue-bright mr-4"></i>
+                        <span class="font-semibold text-navy-dark">Customer Satisfaction</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-50 rounded-lg">
+                        <i class="fas fa-hard-hat text-2xl text-orange-accent mr-4"></i>
+                        <span class="font-semibold text-navy-dark">Safety First Approach</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="bg-navy-dark rounded-2xl p-8 lg:p-12">
+                <div class="grid grid-cols-2 lg:grid-cols-5 gap-8 text-center text-white">
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-bold text-orange-accent mb-2">100%</div>
+                        <div class="text-sm lg:text-base">Quality Assured</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-bold text-orange-accent mb-2">15+</div>
+                        <div class="text-sm lg:text-base">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-bold text-orange-accent mb-2">500+</div>
+                        <div class="text-sm lg:text-base">Happy Clients</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-bold text-orange-accent mb-2">1000+</div>
+                        <div class="text-sm lg:text-base">Projects Delivered</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl lg:text-4xl font-bold text-orange-accent mb-2">24/7</div>
+                        <div class="text-sm lg:text-base">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-navy-dark mb-6">Why Choose Visalakshi Industries?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">We combine years of experience with modern techniques to deliver fabrication solutions that exceed expectations and stand the test of time.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 bg-blue-bright rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-medal text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">Quality Excellence</h3>
+                    <p class="text-gray-600 leading-relaxed">We use only premium materials and maintain strict quality standards throughout the fabrication process.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 bg-orange-accent rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">Expert Team</h3>
+                    <p class="text-gray-600 leading-relaxed">Our skilled craftsmen and engineers bring decades of combined experience to every project.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-20 h-20 bg-blue-bright rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">Timely Delivery</h3>
+                    <p class="text-gray-600 leading-relaxed">We understand the importance of deadlines and ensure timely completion of all projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-navy-dark mb-6">We Provide Best Fabrication Services</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">From custom gates to industrial structures, we deliver premium quality fabrication services with precision, durability, and excellence.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gate Fabrication -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-bright rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-door-open text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">PEB Buildings</h3>
+                    <p class="text-gray-600 mb-6">Pre-Engineered Buildings (PEB) offering fast installation, cost efficiency, and durability.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Custom Designs</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Durable Materials</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Energy Efficient</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Quick Installation</li>
+                    </ul>
+                    <button class="text-blue-bright font-semibold hover:text-orange-accent transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+                
+                <!-- Railing Fabrication -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-orange-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-grip-lines text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">Steel Bridges</h3>
+                    <p class="text-gray-600 mb-6">Strong and durable steel bridge fabrication ensuring safety and long service life.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Load-Bearing Strength</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Weather Resistant</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Corrosion Resistance</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Tailored Engineering Solutions</li>
+                    </ul>
+                    <button class="text-blue-bright font-semibold hover:text-orange-accent transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+                
+                <!-- Grill & Security Work -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-bright rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">Sand and Copper Slag Blasting</h3>
+                    <p class="text-gray-600 mb-6">Surface preparation service for cleaning and smoothing metals using sand and copper slag blasting techniques.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Removes Rust, Paint</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Remove Impurities</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Prepares Metal for Coating</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Ensures Smooth Surface Finish</li>
+                    </ul>
+                    <button class="text-blue-bright font-semibold hover:text-orange-accent transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+                
+                <!-- Industrial Fabrication -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-orange-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-industry text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">Airless Painting</h3>
+                    <p class="text-gray-600 mb-6">Advanced coating technique that provides smooth, uniform, and durable finishes on metal structures.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Heavy Duty</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Anti-Corrosion Protection
+</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>High-Quality Finish</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Faster Application</li>
+                    </ul>
+                    <button class="text-blue-bright font-semibold hover:text-orange-accent transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+                
+                <!-- Structural Steel Work -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-bright rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">All kind of structural Buildings 
+
+</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive structural steel solutions for buildings, warehouses, and industrial facilities.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Structural Design</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Load Bearing</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Earthquake Resistant</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Quality Assurance</li>
+                    </ul>
+                    <button class="text-blue-bright font-semibold hover:text-orange-accent transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+                
+                <!-- Custom Metal Work -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-orange-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-dark mb-4">Metallizing</h3>
+                    <p class="text-gray-600 mb-6">Specialized custom metalwork services tailored to your specific requirements and design preferences.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Custom Design</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Quality Materials</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Precision Work</li>
+                        <li class="flex items-center text-gray-600"><i class="fas fa-check text-blue-bright mr-2"></i>Expert Craftsmanship</li>
+                    </ul>
+                    <button class="text-blue-bright font-semibold hover:text-orange-accent transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-navy-dark mb-6">Our Work Gallery</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Explore our portfolio of completed projects showcasing our expertise in fabrication and metalwork.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- PEB Buildings (3 images) -->
+          <div class="gallery-category group relative overflow-hidden rounded-lg shadow-lg">
+            <div class="relative aspect-square overflow-hidden">
+              <div class="slider flex transition-transform duration-500 ease-in-out w-full h-full">
+                <img src="attached_assets/p1_1756815850200.jpg" alt="PEB 1" class="w-full h-full object-cover flex-shrink-0">
+                <img src="attached_assets/p2_1756815850201.jpg" alt="PEB 2" class="w-full h-full object-cover flex-shrink-0">
+                <img src="attached_assets/p3_1756815850201.jpg" alt="PEB 3" class="w-full h-full object-cover flex-shrink-0">
+              </div>
+              <button class="prev absolute left-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">‹</button>
+              <button class="next absolute right-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">›</button>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <div class="p-6 text-white">
+                <h3 class="text-xl font-bold mb-2">PEB Buildings</h3>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Steel Bridges (2 images) -->
+          <div class="gallery-category group relative overflow-hidden rounded-lg shadow-lg">
+            <div class="relative aspect-square overflow-hidden">
+              <div class="slider flex transition-transform duration-500 ease-in-out w-full h-full">
+                <img src="attached_assets/s1_1756815881202.jpg" alt="Bridge 1" class="w-full h-full object-cover flex-shrink-0">
+                <img src="attached_assets/s2_1756815881203.jpg" alt="Bridge 2" class="w-full h-full object-cover flex-shrink-0">
+              </div>
+              <button class="prev absolute left-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">‹</button>
+              <button class="next absolute right-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">›</button>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <div class="p-6 text-white">
+                <h3 class="text-xl font-bold mb-2">Steel Bridges</h3>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Sand & Copper Slag Blasting (1 image, no controls) -->
+          <div class="gallery-category group relative overflow-hidden rounded-lg shadow-lg">
+            <div class="relative aspect-square overflow-hidden">
+              <div class="slider flex w-full h-full">
+                <img src="attached_assets/c1_1756815861870.jpg" alt="Blasting" class="w-full h-full object-cover flex-shrink-0">
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <div class="p-6 text-white">
+                <h3 class="text-xl font-bold mb-2">Sand & Copper Slag Blasting</h3>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Airless Painting (2 images) -->
+          <div class="gallery-category group relative overflow-hidden rounded-lg shadow-lg">
+            <div class="relative aspect-square overflow-hidden">
+              <div class="slider flex transition-transform duration-500 ease-in-out w-full h-full">
+                <img src="attached_assets/a1_1756815850198.jpg" alt="Painting 1" class="w-full h-full object-cover flex-shrink-0">
+                <img src="attached_assets/a2_1756815850199.jpg" alt="Painting 2" class="w-full h-full object-cover flex-shrink-0">
+              </div>
+              <button class="prev absolute left-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">‹</button>
+              <button class="next absolute right-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">›</button>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <div class="p-6 text-white">
+                <h3 class="text-xl font-bold mb-2">Airless Painting</h3>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Structural Buildings (2 images) -->
+          <div class="gallery-category group relative overflow-hidden rounded-lg shadow-lg">
+            <div class="relative aspect-square overflow-hidden">
+              <div class="slider flex transition-transform duration-500 ease-in-out w-full h-full">
+                <img src="attached_assets/as1_1756815850200.jpg" alt="Structural 1" class="w-full h-full object-cover flex-shrink-0">
+                <img src="attached_assets/as2_1756815850200.jpg" alt="Structural 2" class="w-full h-full object-cover flex-shrink-0">
+              </div>
+              <button class="prev absolute left-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">‹</button>
+              <button class="next absolute right-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">›</button>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <div class="p-6 text-white">
+                <h3 class="text-xl font-bold mb-2">Structural Buildings</h3>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Metalizing (2 images) -->
+          <div class="gallery-category group relative overflow-hidden rounded-lg shadow-lg">
+            <div class="relative aspect-square overflow-hidden">
+              <div class="slider flex transition-transform duration-500 ease-in-out w-full h-full">
+                <img src="attached_assets/m1_1756815866986.jpg" alt="Metalizing 1" class="w-full h-full object-cover flex-shrink-0">
+                <img src="attached_assets/m2_1756815850200.jpg" alt="Metalizing 2" class="w-full h-full object-cover flex-shrink-0">
+              </div>
+              <button class="prev absolute left-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">‹</button>
+              <button class="next absolute right-2 top-1/2 -translate-y-1/2 text-white text-2xl bg-black/40 px-2 py-1 rounded-full">›</button>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+              <div class="p-6 text-white">
+                <h3 class="text-xl font-bold mb-2">Metalizing</h3>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JS for sliders -->
+    <script>
+      document.querySelectorAll(".gallery-category").forEach(category => {
+        const slider = category.querySelector(".slider");
+        const prev = category.querySelector(".prev");
+        const next = category.querySelector(".next");
+
+        if (!slider) return;
+
+        const slides = slider.children.length;
+        let currentSlide = 0;
+        let autoSlide;
+
+        function updateSlide() {
+          slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function startAutoSlide() {
+          autoSlide = setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides;
+            updateSlide();
+          }, 3000); // 3s interval
+        }
+
+        function stopAutoSlide() {
+          clearInterval(autoSlide);
+        }
+
+        if (prev && next) {
+          prev.addEventListener("click", () => {
+            currentSlide = (currentSlide - 1 + slides) % slides;
+            updateSlide();
+          });
+
+          next.addEventListener("click", () => {
+            currentSlide = (currentSlide + 1) % slides;
+            updateSlide();
+          });
+        }
+
+        // Auto-slide with pause on hover
+        category.addEventListener("mouseenter", stopAutoSlide);
+        category.addEventListener("mouseleave", startAutoSlide);
+
+        if (slides > 1) {
+          startAutoSlide();
+        }
+      });
+    </script>
+
+
+    <!-- Our Clients Section -->
+    <section id="clients" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-navy-dark mb-6">Our Clients</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">We are proud to serve a diverse range of clients across various industries. Our commitment to quality and excellence has earned us the trust of leading companies.</p>
+            </div>
+            
+            <!-- Client Logos Scrolling -->
+            <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-lg overflow-hidden">
+                <div class="client-logos-scroll">
+                    <div class="client-logos-track">
+                        <!-- First set of logos -->
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture1_1755781743758.png" alt="SRR - Inspiring Growth" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture2_1755781743758.png" alt="Pennar Industries" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture3_1755781743759.png" alt="APL Apollo Steel Pipes" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture4_1755781743759.png" alt="JK Fenner" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture5_1755781743759.png" alt="Propel" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture6_1755781743759.png" alt="NCL Buildtek Ltd" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture7_1755781757053.png" alt="Swathi Prefab Buildings" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture8_1755781743759.png" alt="Shapoorji Pallonji" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture9_1755781743760.png" alt="Kirby Building Systems" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture10_1755781743760.png" alt="Sugna Premium Steel" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture11_1755781743760.jpg" alt="Ardee Engineering" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture12_1755781743760.png" alt="G4 Steel Group" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture13_1755781743760.jpg" alt="KEP - Knowledge Engineering Planning" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture14_1755781757054.jpg" alt="Cheriesh Construction" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture15_1755781743761.jpg" alt="Green Secure Energy" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture16_1755781743761.jpg" alt="Minera" class="h-16 w-auto object-contain">
+                        </div>
+                        
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture1_1755781743758.png" alt="SRR - Inspiring Growth" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture2_1755781743758.png" alt="Pennar Industries" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture3_1755781743759.png" alt="APL Apollo Steel Pipes" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture4_1755781743759.png" alt="JK Fenner" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture5_1755781743759.png" alt="Propel" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture6_1755781743759.png" alt="NCL Buildtek Ltd" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture7_1755781757053.png" alt="Swathi Prefab Buildings" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture8_1755781743759.png" alt="Shapoorji Pallonji" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture9_1755781743760.png" alt="Kirby Building Systems" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture10_1755781743760.png" alt="Sugna Premium Steel" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture11_1755781743760.jpg" alt="Ardee Engineering" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture12_1755781743760.png" alt="G4 Steel Group" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture13_1755781743760.jpg" alt="KEP - Knowledge Engineering Planning" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture14_1755781757054.jpg" alt="Cheriesh Construction" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture15_1755781743761.jpg" alt="Green Secure Energy" class="h-16 w-auto object-contain">
+                        </div>
+                        <div class="client-logo">
+                            <img src="attached_assets/Picture16_1755781743761.jpg" alt="Minera" class="h-16 w-auto object-contain">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-navy-dark mb-6">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">Ready to start your fabrication project? Contact us today for a free consultation and quote. Our team is here to help bring your vision to life.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-bright rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-navy-dark">Phone Numbers</h3>
+                            </div>
+                            <p class="text-gray-600 mb-2">+91-8121035599</p>
+                            <p class="text-gray-600 mb-2">+91-9849539366</p>
+                            <p class="text-sm text-blue-bright font-semibold">24/7 Emergency Support</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-orange-accent rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-navy-dark">Email Address</h3>
+                            </div>
+                            <p class="text-gray-600 mb-2">info@visalakshiindustries.com</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-bright rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-navy-dark">Our Location</h3>
+                            </div>
+                            <a href="https://maps.app.goo.gl/Equ4GfD9w2WVHaJd6?g_st=awb" target="_blank" class="text-blue-bright hover:text-orange-accent transition-colors">
+                                <p class="text-gray-600">Click to view our location</p>
+                                <p class="text-blue-bright font-semibold">Open in Google Maps</p>
+                            </a>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-orange-accent rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-white text-xl"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-navy-dark">Working Hours</h3>
+                            </div>
+                            <p class="text-gray-600 mb-2">Monday – Saturday:</p>
+                            <p class="text-gray-600 mb-2">9:00 AM – 6:00 PM</p>
+                            <p class="text-gray-600">Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Box -->
+                    <div class="bg-orange-accent text-white p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-2">Need Immediate Assistance?</h3>
+                        <p class="mb-4">Call us directly for urgent requirements.</p>
+                        <a href="tel:+918121035599" class="inline-block bg-white text-orange-accent px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            Call Now +91-8121035599
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="fullName" class="block text-sm font-semibold text-navy-dark mb-2">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-bright focus:border-transparent">
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold text-navy-dark mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-bright focus:border-transparent">
+                                <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-navy-dark mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-bright focus:border-transparent">
+                            <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+                        
+                        <div>
+                            <label for="serviceType" class="block text-sm font-semibold text-navy-dark mb-2">Service Type</label>
+                            <select id="serviceType" name="serviceType" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-bright focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="gate-fabrication">PEB Buildings</option>
+                                <option value="railing-fabrication">Steel Bridges</option>
+                                <option value="grill-security">Sand and Copper Slag Blasting</option>
+                                <option value="industrial-fabrication">Airless Painting</option>
+                                <option value="structural-steel">All kind of structural Buildings</option>
+                                <option value="Custom Metal Work">Metallizing</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="projectDetails" class="block text-sm font-semibold text-navy-dark mb-2">Project Details *</label>
+                            <textarea id="projectDetails" name="projectDetails" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-bright focus:border-transparent" placeholder="Please describe your project requirements..."></textarea>
+                            <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-orange-accent to-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-navy-dark text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="mb-6">
+                        <img src="logo.png" alt="Visalakshi Industries India Pvt Ltd Logo" class="h-16 w-auto mb-4">
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">Leading fabrication company delivering premium quality metalwork and industrial solutions with precision and excellence.</p>
+                    
+                    <!-- Social Media -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-bright rounded-lg flex items-center justify-center hover:bg-orange-accent transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-bright rounded-lg flex items-center justify-center hover:bg-orange-accent transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-bright rounded-lg flex items-center justify-center hover:bg-orange-accent transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-bright rounded-lg flex items-center justify-center hover:bg-orange-accent transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-orange-accent transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-orange-accent transition-colors">About Us</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-orange-accent transition-colors">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-300 hover:text-orange-accent transition-colors">Gallery</a></li>
+                        <li><a href="#clients" class="text-gray-300 hover:text-orange-accent transition-colors">Our Clients</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-orange-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-orange-accent transition-colors">Gate Fabrication</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-orange-accent transition-colors">Railing Work</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-orange-accent transition-colors">Security Grills</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-orange-accent transition-colors">Industrial Fabrication</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-orange-accent transition-colors">Custom Metalwork</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="text-center">
+                    <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>+91-8121035599 | +91-9849539366</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@visalakshiindustries.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i><a href="https://maps.app.goo.gl/Equ4GfD9w2WVHaJd6?g_st=awb" target="_blank" class="hover:text-orange-accent transition-colors">View on Google Maps</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Visalakshi Industries India Private Limited. All rights reserved.</p>
+                <div class="mt-2 space-x-4">
+                    <a href="#" class="hover:text-orange-accent transition-colors">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-orange-accent transition-colors">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-orange-accent transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+        <!-- Chatbot Toggle Button -->
+        <button id="chatbot-toggle" class="bg-orange-accent hover:bg-orange-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110">
+            <i class="fas fa-comments text-xl"></i>
+        </button>
+        
+        <!-- Chatbot Window -->
+        <div id="chatbot-window" class="hidden absolute bottom-20 right-0 w-96 h-96 bg-white rounded-lg shadow-2xl border border-gray-200">
+            <div class="bg-gradient-to-r from-navy-dark to-blue-bright text-white p-4 rounded-t-lg">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-robot mr-2"></i>
+                        <h3 class="font-semibold">Visalakshi Assistant</h3>
+                    </div>
+                    <button id="chatbot-close" class="text-white hover:text-orange-accent">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="chat-messages" class="h-64 overflow-y-auto p-4 space-y-3">
+                <div class="flex items-start space-x-2">
+                    <div class="bg-blue-bright text-white p-2 rounded-lg rounded-tl-none max-w-xs">
+                        <p class="text-sm">Hello! I'm here to help you with questions about Visalakshi Industries' services, capabilities, and projects. How can I assist you today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t p-4">
+                <div class="flex space-x-2">
+                    <input type="text" id="chat-input" placeholder="Ask me about our services..." class="flex-1 border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-bright">
+                    <button id="send-message" class="bg-orange-accent hover:bg-orange-600 text-white px-4 py-2 rounded-lg">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

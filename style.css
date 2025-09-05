@@ -1,0 +1,430 @@
+/* Custom Styles for Vishalakshi Industries */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Custom Color Variables */
+:root {
+    --navy-dark: #001B44;
+    --blue-bright: #0072CE;
+    --orange-accent: #F7931E;
+    --white: #FFFFFF;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Glass Effect for Hero Stats Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+}
+
+/* Navigation Link Active State */
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--orange-accent);
+    transform: scaleX(1);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--orange-accent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Service Cards Hover Effect */
+.service-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 27, 68, 0.1);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 114, 206, 0.05), transparent);
+    transition: left 0.5s ease;
+}
+
+.service-card:hover::before {
+    left: 100%;
+}
+
+/* Gallery Item Hover Effect */
+.gallery-item:hover .aspect-square {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, var(--orange-accent), #e67e22);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(247, 147, 30, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #e67e22, var(--orange-accent));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(247, 147, 30, 0.4);
+}
+
+.btn-secondary {
+    border: 2px solid var(--blue-bright);
+    color: var(--blue-bright);
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--blue-bright);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Parallax Effect for Hero Section */
+#home {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 27, 68, 0.8);
+    z-index: -1;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--orange-accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.form-control:focus {
+    border-color: var(--blue-bright);
+    box-shadow: 0 0 0 3px rgba(0, 114, 206, 0.1);
+    outline: none;
+}
+
+.form-control.error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+/* Success Message */
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.success-message.show {
+    display: block;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .service-card {
+        margin-bottom: 2rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* Sticky Header Shadow */
+.header-sticky {
+    box-shadow: 0 2px 20px rgba(0, 27, 68, 0.1);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--orange-accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(247, 147, 30, 0.3);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background: #e67e22;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(247, 147, 30, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue-bright);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--navy-dark);
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease;
+}
+
+.slide-in-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.6s ease;
+}
+
+.slide-in-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Client Logos Scrolling Animation */
+.client-logos-scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.client-logos-track {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+    align-items: center;
+    gap: 3rem;
+}
+
+.client-logo {
+    flex-shrink: 0;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.client-logo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 27, 68, 0.1);
+    background: white;
+}
+
+.client-logo img {
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover img {
+    filter: grayscale(0%);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause animation on hover */
+.client-logos-scroll:hover .client-logos-track {
+    animation-play-state: paused;
+}
+
+/* Responsive adjustments for client logos */
+@media (max-width: 768px) {
+    .client-logos-track {
+        gap: 2rem;
+    }
+    
+    .client-logo {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .client-logos-track {
+        gap: 1.5rem;
+    }
+    
+    .client-logo {
+        padding: 0.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+}

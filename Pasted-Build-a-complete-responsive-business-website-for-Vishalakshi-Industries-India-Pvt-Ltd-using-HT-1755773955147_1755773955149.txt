@@ -1,0 +1,90 @@
+Build a complete responsive business website for **Vishalakshi Industries India Pvt Ltd** using **HTML, Tailwind CSS, and JavaScript**.  
+
+🎨 Use the color palette from the company logo:  
+- Dark Navy Blue (#001B44) → headers, footer, backgrounds  
+- Bright Blue (#0072CE) → highlights, hover effects  
+- Orange (#F7931E) → call-to-action buttons and accents  
+- White (#FFFFFF) → text backgrounds and contrast  
+
+⚡ Features & Sections Needed:  
+
+1. **Header (Sticky Navigation Bar)**  
+   - Logo on the left  
+   - Top contact info bar (phone, email, working hours)  
+   - Navigation Menu: Home | About Us | Services | Gallery | Contact  
+   - CTA Button: **Get Quote Now** (Orange background, white text, rounded)  
+
+2. **Hero Section**  
+   - Background: industrial workshop image placeholder  
+   - Heading: **Premium Fabrication Services**  
+   - Subheading: **Vishalakshi Industries India Private Limited**  
+   - Tagline: "Leading fabrication company delivering premium quality metalwork, custom steel structures, and industrial solutions with precision and excellence."  
+   - Buttons: **Get Free Quote** (Orange) & **View Our Work** (Blue outline)  
+   - Stats Cards (glass effect, horizontal):  
+     - 15+ Years Industry Experience  
+     - 500+ Projects Completed  
+     - 100% Client Satisfaction  
+
+3. **Why Choose Us Section**  
+   - Heading: "Why Choose Vishalakshi Industries?"  
+   - Subtext: "We combine years of experience with modern techniques to deliver fabrication solutions that exceed expectations and stand the test of time."  
+   - 3 Cards (icons + text):  
+     - Quality Excellence  
+     - Expert Team  
+     - Timely Delivery  
+
+4. **About Us Section**  
+   - Heading: "Welcome To Vishalakshi Industries"  
+   - Paragraph: company intro text  
+   - Strength Points (grid with icons):  
+     - Premium Quality Materials, Expert Craftsmanship, Timely Project Delivery, Competitive Pricing, Customer Satisfaction, Safety First Approach  
+   - Stats Section (grid):  
+     - 100% Quality Assured, 15+ Years Experience, 500+ Happy Clients, 1000+ Projects Delivered, 24/7 Support Available  
+
+5. **Services Section**  
+   - Heading: "We Provide Best Fabrication Services"  
+   - Subtext: "From custom gates to industrial structures, we deliver premium quality fabrication services with precision, durability, and excellence."  
+   - 6 Service Cards (grid with hover animation, icons):  
+     - Gate Fabrication  
+     - Railing Fabrication  
+     - Grill & Security Work  
+     - Industrial Fabrication  
+     - Structural Steel Work  
+     - Custom Metal Work  
+   - Each card → title, description, 3–4 bullet features, **Learn More →** button  
+
+6. **Contact Us Section**  
+   - Heading: "Get In Touch"  
+   - Contact Info Cards:  
+     - Phone Numbers (24/7 Emergency Support)  
+     - Email Addresses  
+     - Location (Industrial Area, Sector-XX, City, State - 000000)  
+     - Working Hours (Mon-Sat: 9 AM – 6 PM, Sun by appointment)  
+   - Contact Form (with JS validation):  
+     - Full Name *, Phone Number *, Email Address *, Service Type, Project Details *  
+     - Button: **Send Message** (Orange gradient)  
+   - Emergency Box (Orange background):  
+     "Need Immediate Assistance? Call us directly for urgent requirements."  
+     Button: **Call Now +91-XXXXXXXXXX**  
+
+7. **Footer Section**  
+   - Left: Company info & social media icons  
+   - Quick Links: Home, About Us, Services, Gallery, Contact  
+   - Services List  
+   - Contact Info (phone, email, address)  
+   - Newsletter subscription (input + subscribe button)  
+   - Bottom: © 2024 Vishalakshi Industries India Private Limited. Privacy Policy | Terms of Service | Sitemap  
+
+⚡ Styling Requirements:  
+- Use **Tailwind CSS** with custom theme colors (logo palette)  
+- Buttons → rounded-lg, shadow-md, hover effects  
+- Cards → subtle shadow, hover lift effect  
+- Smooth scroll navigation  
+- Responsive mobile-first design (hamburger menu for small screens)  
+- Use JavaScript for: sticky navbar, mobile nav toggle, form validation, smooth scroll  
+
+📌 Deliverables:  
+- `index.html` (all sections structured)  
+- `style.css` (Tailwind CDN + custom overrides if needed)  
+- `script.js` (JS features: navbar toggle, validation, scroll)  
+- Placeholder images for hero & services  
